@@ -1,0 +1,66 @@
+<% @title = 'nos missions' %>
+<% @meta_description = "Grâce à son équipe et aux métiers représentés par ses partenaires, EFT2E Ingénierie peut élargir son champs d'intervention et répondre à l'ensemble des lots techniques, en marché public ou privé, dans le cadre de missions complètes ou ponctuelles Le bureau d'études réalise également des missions spécifiques dans le cadre des études"%>
+<% @meta_keyword = 'DCE, CCTP, DPGF, DQE, plans DAO, chauffage, ventilation, climatisation, rafraîchissement,
+solaire, thermique, désenfumage, régulation, GTC, BBC+, STD, Simulation Thermo-Dynamique, Infiltrométrie, infra-rouge, Certification RT2012'%>
+<div class="societe content">
+  <% @missions.each do |mission|%>
+      <h2><%= mission.titre%></h2>
+      <hr>
+      <% if mission.description.present?%>
+          <p><%= mission.description%></p>
+      <%end%>
+      <ul>
+        <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements1%></li>
+        <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements2%></li>
+        <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements3%></li>
+        <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements4%></li>
+        <% if mission.elements5.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements5%></li>
+        <%end%>
+        <% if mission.elements6.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements6%></li>
+        <%end%>
+        <% if mission.elements7.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements7%></li>
+        <%end%>
+        <% if mission.elements8.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements8%></li>
+        <%end%>
+        <% if mission.elements9.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements9%></li>
+        <%end%>
+        <% if mission.elements10.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements10%></li>
+        <%end%>
+        <% if mission.elements11.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements11%></li>
+        <%end%>
+        <% if mission.elements12.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements12%></li>
+        <%end%>
+        <% if mission.elements13.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements13%></li>
+        <%end%>
+        <% if mission.elements14.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements14%></li>
+        <%end%>
+        <% if mission.elements15.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements15%></li>
+        <%end%>
+        <% if mission.elements16.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements16%></li>
+        <%end%>
+        <% if mission.elements17.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements17%></li>
+        <%end%>
+        <% if mission.elements18.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements18%></li>
+        <%end%>
+        <% if mission.elements19.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= mission.elements19%></li>
+        <%end%>
+      </ul>
+  <% end %>
+</div>
+
+

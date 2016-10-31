@@ -1,0 +1,12 @@
+$(function(){
+    $('#photos').click(function(e){
+        e.preventDefault();
+        $('#carou1').removeClass('desactiver');
+        $('#carou2').addClass('desactiver');
+    });
+    $('#plants').click(function(e){
+        e.preventDefault();
+        $('#carou2').removeClass('desactiver');
+        $('#carou1').addClass('desactiver');
+    });
+});

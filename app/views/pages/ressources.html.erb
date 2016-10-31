@@ -1,0 +1,46 @@
+<% @title = 'nos ressources' %>
+<% @meta_description = "EFT2E Ingénierie dispose d'une équipe spécialisée pour répondre aux besoins des projets de la phase conceptuelle du projet jusqu’à sa construction Selon les besoins des projets, le bureau d'études est également entouré de ses partenaires spécialistes "%>
+<% @meta_keyword = 'Chef de projet, Ingénieur électricien, SSI, Certification RT2012, ERNMT, termites, amiante, plomb, gaz, merules, HTD, Hygro-Thermique Dynamique, DPE'%>
+<div class="societe content">
+  <% @ressources.each do |ressource|%>
+      <% if ressource.titre.present?%>
+          <h2><%= ressource.titre%></h2>
+      <%end%>
+      <hr>
+      <% if ressource.description.present?%>
+          <p><%= ressource.description%></p>
+      <%end%>
+      <ul>
+        <% if ressource.elements1.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= ressource.elements1%></li>
+        <%end%>
+        <% if ressource.elements2.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= ressource.elements2%></li>
+        <%end%>
+        <% if ressource.elements3.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= ressource.elements3%></li>
+        <%end%>
+        <% if ressource.elements4.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= ressource.elements4%></li>
+        <%end%>
+        <% if ressource.elements5.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= ressource.elements5%></li>
+        <%end%>
+        <% if ressource.elements6.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= ressource.elements6%></li>
+        <%end%>
+        <% if ressource.elements7.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= ressource.elements7%></li>
+        <%end%>
+        <% if ressource.elements8.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= ressource.elements8%></li>
+        <%end%>
+        <% if ressource.elements9.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= ressource.elements9%></li>
+        <%end%>
+        <% if ressource.elements10.present?%>
+            <li><%= image_tag 'puce.png',class:'puces' %><%= ressource.elements10%></li>
+        <%end%>
+      </ul>
+  <%end%>
+</div>

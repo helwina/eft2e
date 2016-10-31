@@ -1,0 +1,594 @@
+/*------------------------------------*\
+           Liste des articles
+\*------------------------------------*/
+
+#articleliste .carte {
+  display:none;
+  margin:2%;
+  width:29%;
+  overflow:hidden;
+}
+
+.carte img {
+  max-width:100%;
+  position: relative;
+  width:100%;
+  height:275px;
+}
+
+.carte {
+  display:block;
+  margin: auto;
+  overflow: hidden;
+  width: 400px;
+  background-color: lighten($blue-grey,40%);
+  font-size:16px;
+  box-shadow: 0 0 20px rgba(150,169,46,0.5);
+  transition: box-shadow $duration;
+}
+
+.carte:hover{
+  box-shadow: 0 0 50px rgba(150,169,46,0.9);
+}
+
+.carte-image{
+  height: 275px;
+  overflow: hidden;
+  transition: height $duration;
+
+  img{
+    display: block;
+    opacity: 1;
+    transition: opacity $duration, transform $duration;
+    transform: scale(1);
+  }
+
+  .carte:hover & img{
+    opacity: 0.6;
+    transform: scale(1.3);
+  }
+  .carte:hover &{
+    height: 275px - 145px;
+  }
+}
+
+.carte-body{
+  position: relative;
+  height: 125px;
+  transition: height $duration;
+
+  .carte:hover &{ height: 125px + 145px; }
+}
+
+.carte-description{
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  right: 20px;
+  bottom: auto;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0;
+  transition: opacity $duration - 0.1s, transform $duration - 0.1s;
+  transition-delay: 0s;
+  transform: translateY(25px);
+
+  .carte:hover &{
+    overflow: hidden;
+    opacity: 1;
+    transition-delay: 0.1s;
+    transform: translateY(0);
+  }
+}
+
+.carte-title{
+  margin: 0;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+
+  .carte:hover &{
+    animation: titleBlur $duration;
+  }
+}
+
+.carte-description p {
+  word-break:break-all;
+}
+
+@keyframes titleBlur {
+  0%{
+    opacity:0.6;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.6);
+  }
+  100%{
+    opacity:1;
+    text-shadow: 0 5px 5px rgba(0,0,0,0);
+  }
+}
+@media screen and (max-width: 993px){
+  #articleliste .carte {
+    width:45%;
+    margin:2% 2%;
+  }
+
+}
+
+@media screen and (max-width: 770px){
+  #articleliste .carte {
+    width:80%;
+    margin: 2% 10%;
+  }
+}
+
+/*------------------------------------*\
+            carrousel
+\*------------------------------------*/
+
+.btn-group .btn-success {
+  background-color: $green;
+  border:solid 2px darken($green,6%);
+  margin-bottom: 20px;
+}
+
+.btn-group .btn-success:hover {
+  background-color: lighten($green,6%);
+  border:solid 2px darken($green,6%);
+}
+
+.btn-group .active {
+  background-color: darken($green,6%);
+}
+
+.btn .glyphicon {
+  color: $blue-grey;
+}
+
+.carousel-inner {
+  height: auto;
+  width:80%;
+  margin:auto;
+}
+
+.item .carousel-caption {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height:35px;
+  text-transform: uppercase;
+  color: $color;
+  line-height: 35px;
+  text-shadow: none;
+  background-color: $blue-grey;
+}
+
+.btn-cent {
+  bottom: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1600px){
+  .carousel .carousel-inner {
+    height: auto;
+    width:95%;
+    margin:auto;
+  }
+}
+
+@media screen and (max-width: 993px){
+  .carousel .carousel-inner {
+    height: auto;
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .carousel .carousel-inner {
+    height: auto;
+    width:100%;
+  }
+
+  .btn-cent {
+    text-align: center;
+    bottom: 0;
+  }
+}
+
+/*------------------------------------*\
+           carrousel dans vue
+\*------------------------------------*/
+.footer .center-btn {
+  margin-bottom: 225px;
+}
+
+.article-title {
+  color: $green;
+}
+
+.carouvue .carousel-inner {
+  height: min(75%);
+  position: relative;
+  top: 10px;
+  margin:auto;
+}
+
+.carouvue .item img {
+  height:max(475px);
+  width:auto;
+  margin:auto;
+}
+
+.desactiver {
+  display: none;
+}
+
+.center-btn, .article-title  {
+  text-align: center;
+}
+
+.center-btn {
+  position: absolute;
+  bottom: -220px;
+}
+
+@media screen and (max-width: 970px) {
+  .carouvue .item img {
+    height:max(75%);
+    width:max(100%);
+    margin:auto;
+  }
+}
+/*------------------------------------*\
+            header
+\*------------------------------------*/
+.header-navbar {
+  background-color: $green;
+  height: 75px;
+  width:100%;
+  z-index: 9999;
+}
+
+.header-title {
+  width: 100%;
+}
+
+.header-title img {
+  margin:0 1%;
+}
+
+.header-title .header-title-titre {
+  color: $green;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+}
+
+.header-title-titre {
+  margin-top: 15px;
+  vertical-align: top;
+  padding-left: 10%;
+}
+
+@media screen and (max-width: 970px) {
+  .big {
+    display: none;
+  }
+
+  .little {
+    display: inline-block;
+    color: $white;
+  }
+  .header-navbar {
+    text-align: center;
+  }
+
+  .header-title img {
+    margin:0 30%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .header-title img {
+    margin:0 20%;
+  }
+}
+/*------------------------------------*\
+           contact
+\*------------------------------------*/
+.contacts {
+  text-align: center;
+  padding-bottom: 75px;
+}
+
+.contacts .modal-body {
+  text-align: left;
+}
+
+.contacts a, .contacts h1 {
+  color: $green;
+}
+
+.contacts a:hover {
+  color:$blue-grey;
+}
+
+/*------------------------------------*\
+           filter
+\*------------------------------------*/
+.filters {
+  margin:1%;
+  padding:0;
+  list-style:none;
+}
+
+.filters li {
+  display: inline-block;
+}
+
+.filters li span {
+  display: block;
+  padding:10px 5px;
+  color:$white;
+  cursor: pointer;
+}
+
+.filters li span.active {
+  background: $green;
+  color:#fff;
+}
+
+/*------------------------------------*\
+           boite modal
+\*------------------------------------*/
+.modal-footer .btn-info, .modal-footer .btn-info:hover, .modal-header h3, .modal-body h3{
+  text-transform: uppercase
+}
+
+.modal-footer .btn-info {
+  background-color: $green;
+  border: solid 2px darken($green, 15%);
+  color: $color;
+  transition: $duration;
+}
+
+.modal-footer .btn-info:hover {
+  background-color: darken($green,15%);
+  border: solid 2px $green;
+  color: $white;
+}
+
+.article-object-col1, .article-object-col2 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article-object-col1{
+  width: 30%;
+}
+
+.article-object-col2{
+  width: 60%;
+}
+
+.article-object-col1 p, .article-object-col2 p {
+  padding: 0;
+  word-wrap: break-word;
+}
+
+.article-object-col1 p, .modal-body h3, .modal-header h3 {
+  color: $green;
+}
+
+.article-object-col2 strong, .contacts strong {
+  font-weight:normal;
+}
+
+/*------------------------------------*\
+            footer
+\*------------------------------------*/
+
+.fb-link .fb strong a {
+  color: $white;
+}
+
+.fb {
+  line-height:45px;
+  float: right;
+}
+/*------------------------------------*\
+           navbar
+\*------------------------------------*/
+.header-navbar ul {
+  text-align: center;
+}
+
+.header-navbar ul li {
+  display: inline-block;
+  border-right: lighten($green, 5%) solid 4px;
+}
+
+.header-navbar ul li:first-child{
+  padding-left: 5px;
+  border-left: lighten($green, 5%) solid 4px;
+}
+
+.header-navbar ul li a {
+  margin-left: -5px;
+  padding: 0 5px;
+  font-size:20px;
+  line-height:75px;
+  text-transform: uppercase;
+  display: inline-block;
+  height:75px;
+  transition: $durationheader;
+}
+
+.header-navbar ul li a:hover {
+  background-color: darken($green, 5%);
+  color: $white;
+}
+
+.header-icon {
+  position: relative;
+  display: none;
+  float: left;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 2rem;
+    height: 0;
+    top: 20px;
+    right: 37px;
+    box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+  }
+}
+
+.little {
+  display: none;
+}
+@media screen and (max-width: 970px){
+  .header-icon {
+    display: block;
+  }
+
+  .menu-hide {
+    position: relative;
+    right: 255px;
+    transition: $durationwrap;
+    background-color: $green;
+    width: 255px;
+  }
+
+  .menu {
+    right: 0;
+    transition: $durationwrap;
+  }
+
+  .menu, .menu-hide {
+    position: relative;
+    top:0;
+    padding: 0;
+    font-size: 16px;
+    z-index: 10;
+  }
+
+  .wrap {
+    margin: 0 auto;
+  }
+
+  .header-navbar ul li {
+    border-right: none;
+    border-bottom:lighten($green, 5%) solid 3px;
+    display: block;
+  }
+
+  .header-navbar ul li:first-child {
+    border-left:none;
+  }
+
+  .header-navbar ul li a {
+    height: 50px;
+    width:250px;
+    line-height: 50px;
+    margin-left: 0;
+  }
+
+  .big {
+    display: none;
+  }
+
+  .little {
+    display: inline-block;
+    color: $white;
+  }
+  .header-navbar {
+    text-align: center;
+  }
+}
+/*------------------------------------*\
+           barre navigation carousel
+\*------------------------------------*/
+
+.navigation-navbar ul {
+  text-align: center;
+}
+
+.navigation-navbar ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.navigation-navbar {
+  position: relative;
+  bottom: -75px;
+}
+.navigation-navbar li {
+  text-transform: uppercase;
+}
+
+.navigation-navbar li a {
+  color:$green;
+}
+
+.navigation-navbar li a:hover {
+  color: $white;
+}
+
+.navigation-navbar li a:focus {
+  text-decoration: none;
+}
+/*------------------------------------*\
+          societe
+\*------------------------------------*/
+.societe h2 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+  color: $green;
+  padding: 20px 10px;
+  margin: 0;
+}
+
+.societe ul {
+  margin-bottom: 0;
+}
+
+.societe p {
+  text-align: justify;
+}
+
+footer {
+  background-color: $green;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 75px;
+  width:100%;
+}
+
+p {
+  padding:0 30px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.fb-link .fb a {
+  color: $green;
+}
+
+.fb-link .fb a:hover {
+  color: $blue-grey;
+}
+
+
+

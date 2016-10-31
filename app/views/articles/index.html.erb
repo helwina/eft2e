@@ -1,0 +1,62 @@
+<% @title = 'nos realisations' %>
+<% @meta_description = "EFT2E Ingénierie est un bureau d'études spécialisé dans la réalisation des études de conception et d'exécution de fluides techniques et thermiques du bâtiment" %>
+<% @meta_keyword = ' Etudes, Fluides, Thermiques, Energies, Environnement, bureau d études, énergies renouvelables, écoute, conseils, objectifs énergétiques, environnementaux, économiques'%>
+
+      <ul id="filters" class="filters">
+        <li>
+          <span class="filter active" data-filter="cat1 cat2 cat3 cat4 cat5 cat6 cat7 cat8 cat9">Toutes les catégories</span>
+        </li>
+        <li>
+          <span class="filter" data-filter="cat1">Habitat collectif</span>
+        </li>
+        <li>
+          <span class="filter" data-filter="cat2">Habitat individuel</span>
+        </li>
+        <li>
+          <span class="filter" data-filter="cat3">Tertiaire</span>
+        </li>
+        <li>
+          <span class="filter" data-filter="cat4">Social</span>
+        </li>
+        <li>
+          <span class="filter" data-filter="cat5">Culturel</span>
+        </li>
+        <li>
+          <span class="filter" data-filter="cat6">Enseignement</span>
+        </li>
+        <li>
+          <span class="filter" data-filter="cat7">Sportif</span>
+        </li>
+        <li>
+          <span class="filter" data-filter="cat8">Industriel</span>
+        </li>
+        <li>
+          <span class="filter" data-filter="cat9">Santé</span>
+        </li>
+      </ul>
+
+<div class="container-fluid container-fluid-index">
+    <div id="articleliste" class="clear articlelist">
+      <% @articles.each do|article|%>
+          <a href="/articles/<%= article.title %>">
+            <div class="carte cat<%= article.category %>" data-cat="cat<%=article.category%>">
+              <div class="carte-image">
+                <%= image_tag(article.image.url(:original)) %>
+              </div>
+              <div class="carte-body">
+                <div class="carte-title">
+                  <h2><%= article.titre %></h2>
+                </div>
+                <div>
+                  <div class="carte-description">
+                    <p><%= article.description %></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+      <%end%>
+    </div>
+</div>
+
+

@@ -1,0 +1,96 @@
+/*------------------------------------*\
+            style de base
+\*------------------------------------*/
+* {
+  box-sizing: border-box!important;
+}
+
+body {
+  padding:0;
+  
+  font-size:16px;
+  line-height: 1.4;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+footer {
+  padding:5px;
+  width:100%;
+}
+
+li{
+  list-style-type:none;
+}
+.container-fluid, .content {
+  margin: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  background-color: $blue-grey;
+  min-height: 900px;
+}
+
+.container-carou {
+  background-color: $blue-grey!important;
+}
+
+.container-fluid-index {
+  background-color: $white;
+}
+
+.content {
+  width: 80%;
+  background-color: $white;
+}
+
+.container {
+  background-color: $white;
+}
+
+ul li a {
+  color: $color;
+}
+
+
+hr {
+  background: url(asset-path("hr-green.png"))no-repeat left/70%;
+  height: 15px;
+  border: none;
+  margin: 0;
+
+}
+
+.puces {
+  height: 17px;
+  width: 17px;
+  margin-right:7px;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+p {
+  color:$blue-grey;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 970px) {
+  .content {
+    width: 100%;
+  }
+}
+/*------------------------------------*\
+                clear
+\*------------------------------------*/
+.clear {
+  clear: both;
+}

@@ -1,0 +1,86 @@
+<% @title = 'EFT2E Ingénierie'%>
+<% @meta_description = "EFT2E Ingénierie est un bureau d'études spécialisé dans la réalisation des études de conception et d'exécution de fluides techniques et thermiques du bâtiment" %>
+<% @meta_keyword = ' Etudes, Fluides, Thermiques, Energies, Environnement, bureau d études, énergies renouvelables, écoute, conseils, objectifs énergétiques, environnementaux, économiques'%>
+
+      <div class="container content">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="carousel" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="item active"> <%= image_tag 'Ecole_maternelle_de_Huttenheim_-_Larché_&_Metzger.jpg'%>
+                  <h2 class="carousel-caption">Ecole maternelle de Huttenheim - Larché & Metzger</h2>
+                </div>
+                <div class="item"> <%= image_tag 'Ecole_maternelle_de_Stotzheim_-_Larché_&_Metzger.png'%>
+                  <h2 class="carousel-caption">Ecole maternelle de Stotzheim - Larché & Metzger</h2>
+                </div>
+                <div class="item"> <%= image_tag 'Maison_de_la_petite_enfance_de_la_Robertsau_-_Architecture_et_Soleil.jpg'%>
+                  <h2 class="carousel-caption">Maison de la petite enfance de la Robertsau - Architecture et Soleil</h2>
+                </div>
+                <div class="item"> <%= image_tag 'La_Nef_de_Saint-Dié_des_Vosges_-_DWPA.jpg'%>
+                  <h2 class="carousel-caption">La Nef de Saint-Dié des Vosges - DWPA</h2>
+                </div>
+                <div class="item"> <%= image_tag 'Siège_social_Cus_Habitat_et_Habitation_Moderne_-_Mongiello_&_Plisson.jpg'%>
+                  <h2 class="carousel-caption">Siège social Cus Habitat et Habitation Moderne - Mongiello & Plisson</h2>
+                </div>
+                <div class="item"> <%= image_tag 'Gymnase_CSO_de_Koenigshoffen_à_Strasbourg_-_Antonelli_&_Herry.jpg'%>
+                  <h2 class="carousel-caption">Gymnase CSO de Koenigshoffen à Strasbourg - Antonelli & Herry</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="btn-cent">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-success" id="previous">
+                <input type="radio" name="options"><span class="glyphicon glyphicon-step-backward"></span>
+              </label>
+              <label class="btn btn-success" id="pause">
+                <input type="radio" name="options"><span class="glyphicon glyphicon-pause"></span>
+              </label>
+              <label class="btn btn-success active" id="play">
+                <input type="radio" name="options"><span class="glyphicon glyphicon-play"></span>
+              </label>
+              <label class="btn btn-success" id="next">
+                <input type="radio" name="options"><span class="glyphicon glyphicon-step-forward"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+	<h1 style="color: red;">site en cours de construction</h1>
+    <div class="societe content">
+      <% @societes.each do |societe|%>
+          <article>
+            <% if societe.titre.present?%>
+                <h2><%= societe.titre%></h2>
+            <%end%>
+            <hr>
+            <% if societe.paragraphe1.present?%>
+                <p><%= societe.paragraphe1%></p>
+            <%end%>
+            <% if societe.paragraphe2.present?%>
+                <p><%= societe.paragraphe2%></p>
+            <%end%>
+            <% if societe.paragraphe3.present?%>
+                <p><%= societe.paragraphe3%></p>
+            <%end%>
+            <% if societe.paragraphe4.present?%>
+                <p><%= societe.paragraphe4%></p>
+            <%end%>
+            <% if societe.paragraphe5.present?%>
+                <p><%= societe.paragraphe5%></p>
+            <%end%>
+            <% if societe.paragraphe6.present?%>
+                <p><%= societe.paragraphe6%></p>
+            <%end%>
+            <% if societe.paragraphe7.present?%>
+                <p><%= societe.paragraphe7%></p>
+            <%end%>
+            <% if societe.paragraphe8.present?%>
+                <p><%= societe.paragraphe8%></p>
+            <%end%>
+          </article>
+      <%end%>
+
+    </div>
