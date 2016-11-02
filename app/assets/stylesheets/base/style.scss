@@ -260,6 +260,8 @@
 
 .header-title img {
   margin:0 1%;
+  width: 20%;
+  height:20%;
 }
 
 .header-title .header-title-titre {
@@ -270,7 +272,7 @@
 }
 
 .header-title-titre {
-  margin-top: 15px;
+  margin-top: 25px;
   vertical-align: top;
   padding-left: 10%;
 }
@@ -289,12 +291,17 @@
   }
 
   .header-title img {
-    margin:0 30%;
+    margin:0 20%;
+    width:50%;
+    height:50%;
   }
 }
 @media screen and (max-width: 770px) {
   .header-title img {
     margin:0 20%;
+    width:50%;
+    height:50%;
+
   }
 }
 /*------------------------------------*\
