@@ -260,8 +260,8 @@
 
 .header-title img {
   margin:0 1%;
-  width: 10%;
-  height:10%;
+  width: 178px;
+  height:105px;
 }
 
 .header-title .header-title-titre {
@@ -272,16 +272,8 @@
 }
 
 .header-title-titre {
-  margin-top: 25px;
   vertical-align: top;
-  padding-left: 10%;
-}
-@media screen and (max-width: 1250px) {
-  .header-title img {
-    margin:0 1%;
-    width: 15%;
-    height:15%;
-  }
+  padding-left: 30%;
 }
 
 @media screen and (max-width: 970px) {
@@ -299,15 +291,15 @@
 
   .header-title img {
     margin:0 40%;
-    width:25%;
-    height:25%;
+    width:232px;
+    height:136px;
   }
 }
 @media screen and (max-width: 770px) {
   .header-title img {
     margin:0 40%;
-    width:25%;
-    height:25%;
+    width:163px;
+    height:96px;
 
   }
 }
