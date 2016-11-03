@@ -260,8 +260,8 @@
 
 .header-title img {
   margin:0 1%;
-  width: 20%;
-  height:20%;
+  width: 15%;
+  height:15%;
 }
 
 .header-title .header-title-titre {
@@ -275,6 +275,13 @@
   margin-top: 25px;
   vertical-align: top;
   padding-left: 10%;
+}
+@media screen and (max-width: 1250px) {
+  .header-title img {
+    margin:0 1%;
+    width: 20%;
+    height:20%;
+  }
 }
 
 @media screen and (max-width: 970px) {
@@ -292,15 +299,15 @@
 
   .header-title img {
     margin:0 20%;
-    width:50%;
-    height:50%;
+    width:40%;
+    height:40%;
   }
 }
 @media screen and (max-width: 770px) {
   .header-title img {
     margin:0 20%;
-    width:50%;
-    height:50%;
+    width:40%;
+    height:40%;
 
   }
 }
