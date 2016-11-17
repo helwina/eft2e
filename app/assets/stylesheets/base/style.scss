@@ -149,9 +149,13 @@
 }
 
 .carousel-inner {
-  height: auto;
-  width:80%;
-  margin:auto;
+  height: 100%;
+  width:100%;
+}
+
+.carousel-inner img {
+  height: 100%;
+  width: 100%;
 }
 
 .item .carousel-caption {
@@ -175,22 +179,22 @@
 
 @media screen and (max-width: 1600px){
   .carousel .carousel-inner {
-    height: auto;
-    width:95%;
+    height: 100%;
+    width:100%;
     margin:auto;
   }
 }
 
 @media screen and (max-width: 993px){
   .carousel .carousel-inner {
-    height: auto;
+    height: 100%;
     width:100%;
   }
 }
 
 @media screen and (max-width: 770px) {
   .carousel .carousel-inner {
-    height: auto;
+    height: 100%;
     width:100%;
   }
 
