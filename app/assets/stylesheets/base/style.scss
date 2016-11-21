@@ -161,7 +161,7 @@
 .item .carousel-caption {
   margin: 0;
   padding: 0;
-  bottom: 0;
+  top: 0;
   right: 0;
   left: 0;
   height:35px;
@@ -175,6 +175,11 @@
 .btn-cent {
   bottom: 15px;
   text-align: center;
+}
+
+.caroupad {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media screen and (max-width: 1600px){
