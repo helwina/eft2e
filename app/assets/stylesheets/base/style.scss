@@ -200,12 +200,17 @@
 @media screen and (max-width: 770px) {
   .carousel .carousel-inner {
     height: 100%;
-    width:100%;
+    width:auto;
   }
 
   .btn-cent {
     text-align: center;
     bottom: 0;
+  }
+  .item .carousel-caption {
+    font-size:15px;
+    line-height:27px;
+    height: 54px;
   }
 }
 
@@ -251,6 +256,10 @@
     height:max(75%);
     width:max(100%);
     margin:auto;
+  }
+
+  footer {
+    height: 115px!important;
   }
 }
 /*------------------------------------*\
@@ -603,6 +612,12 @@ footer {
   bottom: 0;
   height: 75px;
   width:100%;
+}
+
+@media screen and (max-width: 970px) {
+  footer {
+    height: 115px!important;
+  }
 }
 
 p {
