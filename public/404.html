@@ -47,26 +47,29 @@
         }
     </style>
 </head>
-    <header>
-        <div class="header-navbar">
-            <nav>
-                <ul>
-                    <li><%= link_to('Accueil', root_path)%></li>
-                    <li><%= link_to('Nos ressources', ressources_path)%></li>
-                    <li><%= link_to('Nos missions',missions_path)%></li>
-                    <li><%= link_to('Nos realisation', articles_path)%></li>
-                    <li><%= link_to('Nous contacter', contact_path)%></li>
-                </ul>
-            </nav>
+<header>
+    <div class="header-title">
+        <img src="/assets/logo-eft2e-b6fc7c8fd978896beac8820acc71bcd2efffd540488c49250ca6966f54e55599.png" alt="Logo eft2e" />
+        <div class="header-title-titre">
+            <h1 class="big">BUREAU D'ETUDES EFT2E INGENIERIE</h1>
+            <h2 class="big under"><b>E</b>tudes <b>F</b>luides <b>T</b>hermiques <b>E</b>nergies & <b>E</b>nvironnement</h2>
         </div>
-        <div class="header-title">
-            <%= image_tag 'logo-eft2e.png'%>
-            <div class="header-title-titre">
-                <h1>EFT2E INGÉNIERIE</h1>
-                <h2>Bureau d'etudes</h2>
-            </div>
-        </div>
-    </header>
+    </div>
+
+    <div class="header-navbar" data-sticky>
+        <h1 class="little">EFT2E INGÉNIERIE</h1>
+        <div id="header-icon" class="header-icon"></div>
+        <nav class="wrap" >
+            <ul  class="menu-hide">
+                <li><a href="http://www.eft2e-ing.fr/">Accueil</a></li>
+                <li><a href="http://www.eft2e-ing.fr/ressources">Ressources</a></li>
+                <li><a href="http://www.eft2e-ing.fr/missions">Missions</a></li>
+                <li><a href="http://www.eft2e-ing.fr/articles">Realisations</a></li>
+                <li><a href="http://www.eft2e-ing.fr/contact">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <body>
     <!-- This file lives in public/404.html -->
