@@ -1,7 +1,7 @@
 <% @title = 'nos ressources' %>
 <% @meta_description = "EFT2E Ingénierie dispose d'une équipe spécialisée pour répondre aux besoins des projets de la phase conceptuelle du projet jusqu’à sa construction Selon les besoins des projets, le bureau d'études est également entouré de ses partenaires spécialistes "%>
 <% @meta_keyword = 'Chef de projet, Ingénieur électricien, SSI, Certification RT2012, ERNMT, termites, amiante, plomb, gaz, merules, HTD, Hygro-Thermique Dynamique, DPE'%>
-<div class="societe content">
+<div class="societe content container">
   <% @ressources.each do |ressource|%>
       <% if ressource.titre.present?%>
           <h2><%= ressource.titre%></h2>
