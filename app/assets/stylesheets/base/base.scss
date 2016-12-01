@@ -47,7 +47,8 @@ li{
 }
 
 .content {
-  width: 80%;
+  max-width: 80%;
+  min-width: 50%;
   background-color: $white;
 }
 
