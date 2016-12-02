@@ -1,68 +1,7 @@
 <% @title = 'nos realisations' %>
 <% @meta_description = "EFT2E Ingénierie est un bureau d'études spécialisé dans la réalisation des études de conception et d'exécution de fluides techniques et thermiques du bâtiment" %>
 <% @meta_keyword = ' Etudes, Fluides, Thermiques, Energies, Environnement, bureau d études, énergies renouvelables, écoute, conseils, objectifs énergétiques, environnementaux, économiques'%>
-<div class="container content">
-  <div class="row">
-    <div class="col-sm-12 caroupad">
-      <div id="carousel" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="item active">
-            <%= link_to '/articles/Ecole-maternelle-de-Huttenheim-(67)' do %>
-                <%= image_tag 'Ecole_maternelle_de_Huttenheim_-_Larché_&_Metzger.jpg'%>
-            <% end %>
-            <h2 class="carousel-caption">Ecole maternelle de Huttenheim - Larché & Metzger</h2>
-          </div>
-          <div class="item">
-            <%= link_to '/articles/Ecole-maternelle-de-Stotzheim-(67)' do %>
-                <%= image_tag 'Ecole_maternelle_de_Stotzheim_-_Larché_&_Metzger.png'%>
-            <% end %>
-            <h2 class="carousel-caption">Ecole maternelle de Stotzheim - Larché & Metzger</h2>
-          </div>
-          <div class="item">
-            <%= link_to '/articles/Maison-de-la-petite-enfance-de-la-Robertsau-à-Strasbourg-(67)' do %>
-                <%= image_tag 'Maison_de_la_petite_enfance_de_la_Robertsau_-_Architecture_et_Soleil.jpg'%>
-            <% end %>
-            <h2 class="carousel-caption">Maison de la petite enfance de la Robertsau - Architecture et Soleil</h2>
-          </div>
-          <div class="item">
-            <%= link_to '/articles/La-NEF-de-Saint-Dié-des-Vosges-(88)' do %>
-                <%= image_tag 'La_Nef_de_Saint-Dié_des_Vosges_-_DWPA.jpg'%>
-            <% end %>
-            <h2 class="carousel-caption">La Nef de Saint-Dié des Vosges - DWPA</h2>
-          </div>
-          <div class="item">
-            <%= image_tag 'Siège_social_Cus_Habitat_et_Habitation_Moderne_-_Mongiello_&_Plisson.jpg'%>
-            <h2 class="carousel-caption">Siège social Cus Habitat et Habitation Moderne - Mongiello & Plisson</h2>
-          </div>
-          <div class="item">
-            <%= link_to '/articles/Gymnase-Centre-Sportif-Ouest-(CSO)-de-Koenigshoffen-à-Strasbourg-(67)' do %>
-                <%= image_tag 'Gymnase_CSO_de_Koenigshoffen_à_Strasbourg_-_Antonelli_&_Herry.jpg'%>
-            <% end %>
-            <h2 class="carousel-caption">Gymnase CSO de Koenigshoffen à Strasbourg - Antonelli & Herry</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="btn-cent">
-      <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-success" id="previous">
-          <input type="radio" name="options"><span class="glyphicon glyphicon-step-backward"></span>
-        </label>
-        <label class="btn btn-success" id="pause">
-          <input type="radio" name="options"><span class="glyphicon glyphicon-pause"></span>
-        </label>
-        <label class="btn btn-success active" id="play">
-          <input type="radio" name="options"><span class="glyphicon glyphicon-play"></span>
-        </label>
-        <label class="btn btn-success" id="next">
-          <input type="radio" name="options"><span class="glyphicon glyphicon-step-forward"></span>
-        </label>
-      </div>
-    </div>
-  </div>
-</div>
+
       <ul id="filters" class="filters">
         <li>
           <span class="filter active" data-filter="cat1 cat2 cat3 cat4 cat5 cat6 cat7 cat8 cat9">Toutes les catégories</span>
@@ -97,7 +36,7 @@
       </ul>
 
 <div class="container-fluid container-fluid-index">
-    <div id="articleliste" class="clear articlelist">
+    <div id="articleliste" class="clear articlelist container content">
       <% @articles.each do|article|%>
           <a href="/articles/<%= article.title %>">
             <div class="carte cat<%= article.category %>" data-cat="cat<%=article.category%>">
