@@ -35,8 +35,8 @@
         </li>
       </ul>
 
-<div class="container-fluid container-fluid-index">
-    <div id="articleliste" class="clear articlelist container content">
+<div class="container container-fluid-index">
+    <div id="articleliste" class="clear articlelist ">
       <% @articles.each do|article|%>
           <a href="/articles/<%= article.title %>">
             <div class="carte cat<%= article.category %>" data-cat="cat<%=article.category%>">
