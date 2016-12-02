@@ -3,6 +3,10 @@ class PagesController < ApplicationController
     @societes = Societe.all
   end
 
+  def societe
+
+  end
+
   def ressources
     @ressources = Ressource.all
   end

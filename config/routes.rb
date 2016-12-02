@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root 'pages#index'
+  get 'societe'                          =>'pages#societe'
   get 'ressources'                       =>'pages#ressources'
   get 'missions'                         =>'pages#missions'
   get 'contact'                          =>'pages#contact'
