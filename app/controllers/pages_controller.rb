@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def societe
-
+    @societes = Societe.all
   end
 
   def ressources
