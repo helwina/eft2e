@@ -274,12 +274,11 @@
 
 .header-title {
   display:block;
-  margin-right:149px;
   text-align: center;
-  height: 123px !important;;
+  height: auto !important;;
 }
 
-.header-title img {
+.header img {
   width: 174px;
   height:81px;
   float: left;
@@ -321,6 +320,7 @@
     padding-left: 0;
   }
 }
+
 @media screen and (max-width: 970px) {
   .big {
     display: none;
@@ -502,7 +502,7 @@
     display: block;
     width: 2rem;
     height: 0;
-    top: 20px;
+    top: 10px;
     right: 37px;
     box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
   }
