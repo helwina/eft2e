@@ -273,21 +273,19 @@
 }
 
 .header-title {
-  width: 158px;
+  width: 100%;
 }
 
 .header-title img {
-  width: 158px;
-  height:85px;
+  margin:0 1%;
+  width: 178px;
+  height:105px;
 }
 
 .header-title h2 {
   margin-top: 10px;
-  font-size: 16px;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  right: 0;
+  font-size: 16px;;
+
 }
 
 .header-title .header-title-titre {
@@ -298,11 +296,8 @@
 }
 
 .header-title-titre {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top:0;
-  bottom: 0;
+  vertical-align: top;
+  padding-left: 15%;
 }
 
 .header-title-titre b {
