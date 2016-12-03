@@ -267,7 +267,7 @@
 \*------------------------------------*/
 .header-navbar {
   background-color: $green;
-  height: 75px;
+  height: 50px;
   width:100%;
   z-index: 9999;
 }
@@ -476,11 +476,11 @@
 .header-navbar ul li a {
   margin-left: -5px;
   padding: 0 5px;
-  font-size:20px;
-  line-height:75px;
+  font-size:16px;
+  line-height:50px;
   text-transform: uppercase;
   display: inline-block;
-  height:75px;
+  height:50px;
   transition: $durationheader;
 }
 
@@ -493,8 +493,8 @@
   position: relative;
   display: none;
   float: left;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   &:after {
     content: '';
