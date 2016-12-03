@@ -274,22 +274,20 @@
 
 .header-title {
   display:block;
-  margin-left:auto;
-  margin-right:auto;
-  width:720px;
-  height: 105px;
+  margin-right:149px;
+  text-align: center;
 }
 
 .header-title img {
-  width: 178px;
-  height:105px;
-  vertical-align: top;
+  width: 89px;
+  height:52px;
+  float: left;
+  margin-top:26px;
 }
 
 .header-title h2 {
   margin-top: 10px;
-  font-size: 16px;;
-
+  font-size: 16px;
 }
 
 .header-title .header-title-titre {
@@ -305,6 +303,7 @@
 
 .under {
   text-transform: capitalize;
+  text-decoration: none!important;
 }
 
 .big div {
