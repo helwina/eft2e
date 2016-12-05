@@ -14,7 +14,6 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require cards
-//= require fixed
 //= require carousels
 //= require carouvue
 //= require_tree .

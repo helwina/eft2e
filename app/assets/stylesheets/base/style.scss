@@ -110,20 +110,6 @@
     text-shadow: 0 5px 5px rgba(0,0,0,0);
   }
 }
-@media screen and (max-width: 993px){
-  #articleliste .carte {
-    width:45%;
-    margin:2% 2%;
-  }
-
-}
-
-@media screen and (max-width: 770px){
-  #articleliste .carte {
-    width:80%;
-    margin: 2% 10%;
-  }
-}
 
 /*------------------------------------*\
             carrousel
@@ -182,38 +168,6 @@
   padding-right: 0;
 }
 
-@media screen and (max-width: 1600px){
-  .carousel .carousel-inner {
-    height: 100%;
-    width:100%;
-    margin:auto;
-  }
-}
-
-@media screen and (max-width: 993px){
-  .carousel .carousel-inner {
-    height: 100%;
-    width:100%;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .carousel .carousel-inner {
-    height: 100%;
-    width:auto;
-  }
-
-  .btn-cent {
-    text-align: center;
-    bottom: 0;
-  }
-  .item .carousel-caption {
-    font-size:15px;
-    line-height:27px;
-    height: 54px;
-  }
-}
-
 /*------------------------------------*\
            carrousel dans vue
 \*------------------------------------*/
@@ -251,17 +205,6 @@
   bottom: -220px;
 }
 
-@media screen and (max-width: 970px) {
-  .carouvue .item img {
-    height:max(75%);
-    width:max(100%);
-    margin:auto;
-  }
-
-  footer {
-    height: 115px!important;
-  }
-}
 /*------------------------------------*\
             header
 \*------------------------------------*/
@@ -315,39 +258,6 @@
   display: inline;
 }
 
-@media screen and (max-width: 1100px) {
-  .header-title-titre {
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 970px) {
-  .big {
-    display: none;
-  }
-
-  .little {
-    display: inline-block;
-    color: $white;
-  }
-  .header-navbar {
-    text-align: center;
-  }
-
-  .header-title img {
-    margin:0 40%;
-    width:232px;
-    height:136px;
-  }
-}
-@media screen and (max-width: 770px) {
-  .header-title img {
-    margin:0 40%;
-    width:163px;
-    height:96px;
-
-  }
-}
 /*------------------------------------*\
            contact
 \*------------------------------------*/
@@ -465,12 +375,10 @@
 
 .header-navbar ul li {
   display: inline-block;
-  border-right: lighten($green, 5%) solid 4px;
 }
 
 .header-navbar ul li:first-child{
   padding-left: 5px;
-  border-left: lighten($green, 5%) solid 4px;
 }
 
 .header-navbar ul li a {
@@ -489,87 +397,10 @@
   color: $white;
 }
 
-.header-icon {
-  position: relative;
-  display: none;
-  float: left;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  &:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 2rem;
-    height: 0;
-    top: 10px;
-    right: 37px;
-    box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
-  }
-}
-
 .little {
   display: none;
 }
-@media screen and (max-width: 970px){
-  .header-icon {
-    display: block;
-  }
 
-  .menu-hide {
-    position: relative;
-    right: 255px;
-    transition: $durationwrap;
-    background-color: $green;
-    width: 255px;
-  }
-
-  .menu {
-    right: 0;
-    transition: $durationwrap;
-  }
-
-  .menu, .menu-hide {
-    position: relative;
-    top:0;
-    padding: 0;
-    font-size: 16px;
-    z-index: 10;
-  }
-
-  .wrap {
-    margin: 0 auto;
-  }
-
-  .header-navbar ul li {
-    border-right: none;
-    border-bottom:lighten($green, 5%) solid 3px;
-    display: block;
-  }
-
-  .header-navbar ul li:first-child {
-    border-left:none;
-  }
-
-  .header-navbar ul li a {
-    height: 50px;
-    width:250px;
-    line-height: 50px;
-    margin-left: 0;
-  }
-
-  .big {
-    display: none;
-  }
-
-  .little {
-    display: inline-block;
-    color: $white;
-  }
-  .header-navbar {
-    text-align: center;
-  }
-}
 /*------------------------------------*\
            barre navigation carousel
 \*------------------------------------*/
@@ -636,11 +467,6 @@ footer {
   width:100%;
 }
 
-@media screen and (max-width: 970px) {
-  footer {
-    height: 115px!important;
-  }
-}
 
 p {
   padding:0 30px;

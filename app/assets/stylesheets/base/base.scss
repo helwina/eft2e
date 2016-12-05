@@ -7,9 +7,11 @@
 
 body {
   padding:0;
-  
+  width:101%;
+  margin:auto;
   font-size:16px;
   line-height: 1.4;
+  background-color: $blue-grey
 }
 
 h1 {
@@ -23,20 +25,15 @@ h2 {
 
 footer {
   padding:5px;
-  width:100%;
+  width:auto;
 }
 
 li{
   list-style-type:none;
 }
-.container-fluid, .content {
-  margin: auto;
-}
 
-.container-fluid {
-  width: 100%;
-  background-color: $blue-grey;
-  min-height: 900px;
+.con-flu, .content {
+  margin: auto;
 }
 
 .container-carou {
@@ -48,7 +45,7 @@ li{
 }
 
 .content {
-  max-width: 55%;
+  width: 898px;
   background-color: $white;
 }
 
@@ -60,13 +57,11 @@ ul li a {
   color: $color;
 }
 
-
 hr {
   background: url(asset-path("hr-green.png"))no-repeat left/70%;
   height: 15px;
   border: none;
   margin: 0;
-
 }
 
 .puces {
@@ -82,12 +77,6 @@ a, a:hover {
 p {
   color:$color;
   word-wrap: break-word;
-}
-
-@media screen and (max-width: 970px) {
-  .content {
-    width: 100%;
-  }
 }
 
 .gris {
@@ -113,6 +102,7 @@ p {
   font-family:Sans-Serif;
   font-size: 15px;
 }
+
 
 /*------------------------------------*\
                 clear
