@@ -171,9 +171,6 @@
 /*------------------------------------*\
            carrousel dans vue
 \*------------------------------------*/
-.footer .center-btn {
-  margin-bottom: 225px;
-}
 
 .article-title {
   color: $green;
@@ -199,10 +196,9 @@
 .center-btn, .article-title  {
   text-align: center;
 }
-
 .center-btn {
-  position: absolute;
-  bottom: -220px;
+  position: relative;
+  top: -615px;
 }
 
 /*------------------------------------*\
@@ -417,7 +413,7 @@
 
 .navigation-navbar {
   position: relative;
-  bottom: 75px;
+  top: -620px;
 }
 .navigation-navbar li {
   text-transform: uppercase;

@@ -90,113 +90,117 @@ solaire, thermique, désenfumage, régulation, GTC, BBC+, STD, Simulation Thermo
     </div><!--/modal-dialogue-->
   </div><!--/modal-->
   <!-- carousel1-->
-  <div id="carou1" class="container container-carou soci">
-    <div class="row">
-      <div class="col-sm-12">
-        <div id="carousel" class="carousel slide carouvue">
-          <div class="carousel-inner">
-            <%if @article.image.present?%>
-                <div class="item active">
-                  <%= image_tag(@article.image.url(:original)) %>
-                </div>
-            <%end%>
-            <%if @article.image1.present?%>
-                <div class="item">
-                  <%= image_tag(@article.image1.url(:original)) %>
-                </div>
-            <%end%>
-            <%if @article.image2.present?%>
-                <div class="item">
-                  <%= image_tag(@article.image2.url(:original)) %>
-                </div>
-            <%end%>
-            <%if @article.image3.present?%>
-                <div class="item">
-                  <%= image_tag(@article.image3.url(:original)) %>
-                </div>
-            <%end%>
-            <%if @article.image4.present?%>
-                <div class="item">
-                  <%= image_tag(@article.image4.url(:original)) %>
-                </div>
- <%end%>
-            <%if @article.image5.present?%>
-                <div class="item">
-                  <%= image_tag(@article.image5.url(:original)) %>
-                </div>
-            <%end%>
+  <div>
+    <div id="carou1" class="container container-carou soci">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="carousel" class="carousel slide carouvue">
+            <div class="carousel-inner">
+              <%if @article.image.present?%>
+                  <div class="item active">
+                    <%= image_tag(@article.image.url(:original)) %>
+                  </div>
+              <%end%>
+              <%if @article.image1.present?%>
+                  <div class="item">
+                    <%= image_tag(@article.image1.url(:original)) %>
+                  </div>
+              <%end%>
+              <%if @article.image2.present?%>
+                  <div class="item">
+                    <%= image_tag(@article.image2.url(:original)) %>
+                  </div>
+              <%end%>
+              <%if @article.image3.present?%>
+                  <div class="item">
+                    <%= image_tag(@article.image3.url(:original)) %>
+                  </div>
+              <%end%>
+              <%if @article.image4.present?%>
+                  <div class="item">
+                    <%= image_tag(@article.image4.url(:original)) %>
+                  </div>
+              <%end%>
+              <%if @article.image5.present?%>
+                  <div class="item">
+                    <%= image_tag(@article.image5.url(:original)) %>
+                  </div>
+              <%end%>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+
+
+    <!-- carousel2-->
+    <div id="carou2" class="container desactiver container-carou soci">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="carousel" class="carousel slide carouvue">
+            <div class="carousel-inner">
+              <%if @article.plant.present?%>
+                  <div class="item active">
+                    <%= image_tag(@article.plant.url(:original)) %>
+                  </div>
+              <%end%>
+              <%if @article.plant1.present?%>
+                  <div class="item">
+                    <%= image_tag(@article.plant1.url(:original)) %>
+                  </div>
+              <%end%>
+              <%if @article.plant2.present?%>
+                  <div class="item">
+                    <%= image_tag(@article.plant2.url(:original)) %>
+                  </div>
+              <%end%>
+              <%if @article.plant3.present?%>
+                  <div class="item">
+                    <%= image_tag(@article.plant3.url(:original)) %>
+                  </div>
+              <%end%>
+              <%if @article.plant4.present?%>
+                  <div class="item">
+                    <%= image_tag(@article.plant4.url(:original)) %>
+                  </div>
+              <%end%>
+              <%if @article.plant5.present?%>
+                  <div class="item">
+                    <%= image_tag(@article.plant5.url(:original)) %>
+                  </div>
+              <%end%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="col-sm-offset-4 col-sm-4 center-btn">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-success" id="previous">
+              <input type="radio" name="options"><span class="glyphicon glyphicon-step-backward"></span>
+            </label>
+            <label class="btn btn-success" id="pause">
+              <input type="radio" name="options"><span class="glyphicon glyphicon-pause"></span>
+            </label>
+            <label class="btn btn-success active" id="play">
+              <input type="radio" name="options"><span class="glyphicon glyphicon-play"></span>
+            </label>
+            <label class="btn btn-success" id="next">
+              <input type="radio" name="options"><span class="glyphicon glyphicon-step-forward"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-navbar">
+        <ul>
+          <li><a href="#" id="photos">photos</a></li>
+          <li><a href="#" id="plants">plans</a></li>
+          <li><a data-toggle="modal" href="#infos">fiche technique</a></li>
+        </ul>
       </div>
     </div>
   </div>
 
 
-  <!-- carousel2-->
-  <div id="carou2" class="container desactiver container-carou soci">
-    <div class="row">
-      <div class="col-lg-12">
-        <div id="carousel" class="carousel slide carouvue">
-          <div class="carousel-inner">
-            <%if @article.plant.present?%>
-                <div class="item active">
-                  <%= image_tag(@article.plant.url(:original)) %>
-                </div>
-            <%end%>
-            <%if @article.plant1.present?%>
-                <div class="item">
-                  <%= image_tag(@article.plant1.url(:original)) %>
-                </div>
-            <%end%>
-            <%if @article.plant2.present?%>
-                <div class="item">
-                  <%= image_tag(@article.plant2.url(:original)) %>
-                </div>
-            <%end%>
-            <%if @article.plant3.present?%>
-                <div class="item">
-                  <%= image_tag(@article.plant3.url(:original)) %>
-                </div>
-            <%end%>
-            <%if @article.plant4.present?%>
-                <div class="item">
-                  <%= image_tag(@article.plant4.url(:original)) %>
-                </div>
-            <%end%>
-            <%if @article.plant5.present?%>
-                <div class="item">
-                  <%= image_tag(@article.plant5.url(:original)) %>
-                </div>
-            <%end%>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="row">
-      <div class="col-sm-offset-4 col-sm-4 center-btn">
-        <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-success" id="previous">
-            <input type="radio" name="options"><span class="glyphicon glyphicon-step-backward"></span>
-          </label>
-          <label class="btn btn-success" id="pause">
-            <input type="radio" name="options"><span class="glyphicon glyphicon-pause"></span>
-          </label>
-          <label class="btn btn-success active" id="play">
-            <input type="radio" name="options"><span class="glyphicon glyphicon-play"></span>
-          </label>
-          <label class="btn btn-success" id="next">
-            <input type="radio" name="options"><span class="glyphicon glyphicon-step-forward"></span>
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="navigation-navbar">
-      <ul>
-        <li><a href="#" id="photos">photos</a></li>
-        <li><a href="#" id="plants">plans</a></li>
-        <li><a data-toggle="modal" href="#infos">fiche technique</a></li>
-      </ul>
-    </div>
-  </div>
