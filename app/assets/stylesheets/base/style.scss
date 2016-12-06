@@ -239,7 +239,8 @@
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
-  padding-right: 100px;
+  padding-right: 112px;
+  padding-bottom:8px;
 }
 
 .header-title-titre {
@@ -253,6 +254,10 @@
 .under {
   text-transform: capitalize;
   text-decoration: none!important;
+}
+
+h2 .under {
+  padding-bottom: 20px;
 }
 
 .big div {
