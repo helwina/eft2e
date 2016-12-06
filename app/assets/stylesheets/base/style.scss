@@ -135,31 +135,24 @@
 }
 
 .carousel-inner {
-  height: 110%;
+  height: 100%;
   width:100%;
 }
 
 .carousel-inner img {
-  height: 110%;
+  height: 100%;
   width: 100%;
 }
 
-.item .carousel-caption {
+.item .carousel-caption h2{
   margin: 0;
   padding: 0;
-  bottom: 20px;
+  bottom: 5px;
   right: 0;
   height:40px;
   color: $white;
-
   line-height: 16px;
   text-shadow: none;
-
-}
-
-.item .carousel-caption h2 {
-  margin: 0;
-  padding: 0;
   font-size:14px!important;
   font-weight: bolder;
   text-align: left;
