@@ -388,19 +388,22 @@ h2 .under {
 }
 
 .header-navbar ul li a {
-  margin-left: -5px;
-  padding: 0 5px;
+  padding: 0 34px;
   font-size:14px;
   line-height:50px;
   text-transform: uppercase;
   display: inline-block;
   height:50px;
+  font-weight: bold;
   transition: $durationheader;
 }
 
 .header-navbar ul li a:hover {
   background-color: darken($green, 5%);
   color: $white;
+}
+.header-navbar ul li a:first-child:hover{
+  padding-left: -10px;
 }
 
 .little {
