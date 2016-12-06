@@ -149,16 +149,17 @@
   padding: 0;
   color: $white;
   line-height: 16px;
-  text-shadow: none;
   font-size:14px!important;
   font-weight: bolder;
   text-align: left;
+  text-shadow: 2px 2px 4px $color;
 }
 
 .carousel-inner .item .carousel-caption {
   position: absolute;
-  bottom: -30px!important;
-  left: 0!important;
+  bottom: -20px!important;
+  left: 10px!important;
+
 }
 
 .btn-cent {
