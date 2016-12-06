@@ -147,15 +147,14 @@
 .item .carousel-caption {
   margin: 0;
   padding: 0;
-  top: 0;
+  bottom: 20px;
   right: 0;
-  left: 0;
-  height:35px;
+  height:20px;
   text-transform: uppercase;
   color: $color;
-  line-height: 35px;
+  line-height: 20px;
   text-shadow: none;
-  background-color: $blue-grey;
+  font-size:16px;
 }
 
 .btn-cent {
