@@ -120,6 +120,9 @@
   border:solid 2px darken($green,6%);
   margin-bottom: 20px;
 }
+.btn-success {
+  width:225px;
+}
 
 .btn-group .btn-success:hover {
   background-color: lighten($green,6%);
