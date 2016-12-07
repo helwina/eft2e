@@ -122,6 +122,7 @@
 }
 .btn-success {
   width:225px;
+  height:20px;
 }
 
 .btn-group .btn-success:hover {
@@ -135,8 +136,13 @@
 
 .btn .glyphicon {
   color: $blue-grey;
+  margin-top: 0;
+  height: 5px;
 }
 
+.glyphicon {
+  top: -6px !important;;
+}
 .carousel-inner {
   height: 100%;
   width:100%;
