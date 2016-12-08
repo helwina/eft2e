@@ -117,12 +117,14 @@
 
 .btn-group .btn-success {
   background-color: $green;
-  border:solid 2px darken($green,6%);
+  border:solid 3px darken($green,6%);
   margin-bottom: 20px;
 }
+
 .btn-success {
   width:225px;
   height:20px;
+  border-radius: 0;
 }
 
 .btn-group .btn-success:hover {
@@ -141,7 +143,7 @@
 }
 
 .glyphicon {
-  top: -4px !important;;
+  top: -6px !important;;
 }
 
 .carousel-inner {
