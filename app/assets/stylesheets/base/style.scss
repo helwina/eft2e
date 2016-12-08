@@ -141,8 +141,9 @@
 }
 
 .glyphicon {
-  top: -6px !important;;
+  top: -4px !important;;
 }
+
 .carousel-inner {
   height: 100%;
   width:100%;
@@ -377,10 +378,12 @@ h2 .under {
   padding-top: 50px;
 }
 
-.fb {
-  text-align: center;
+footer .fb-link p {
+  text-align: center!important;
   color: $color;
 }
+
+
 /*------------------------------------*\
            navbar
 \*------------------------------------*/
@@ -390,6 +393,11 @@ h2 .under {
 
 .header-navbar ul li {
   display: inline-block;
+  border-right: lighten($green, 5%) solid 4px;
+}
+
+.header-navbar ul li:last-child {
+  border-right: none;
 }
 
 .header-navbar ul li:first-child{
@@ -397,7 +405,8 @@ h2 .under {
 }
 
 .header-navbar ul li a {
-  padding: 0 34px;
+  margin-left: -5px;
+  padding: 0 32px;
   font-size:14px;
   line-height:50px;
   text-transform: uppercase;
