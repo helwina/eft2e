@@ -4,8 +4,8 @@
 
 #articleliste .carte {
   display:none;
-  margin:2%;
-  width:45%;
+  margin:1%;
+  width:47%;
   overflow:hidden;
 }
 
@@ -54,10 +54,10 @@
 
 .carte-body{
   position: relative;
-  height: 125px;
+  height: 85px;
   transition: height $duration;
 
-  .carte:hover &{ height: 125px + 145px; }
+  .carte:hover &{ height: 85px + 145px; }
 }
 
 .carte-description{
