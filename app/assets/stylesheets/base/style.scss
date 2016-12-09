@@ -119,6 +119,7 @@
   background-color: $green;
   border:solid 3px darken($green,6%);
   margin-bottom: 20px;
+  transition: $duration;
 }
 
 .btn-success {
@@ -141,7 +142,9 @@
   margin-top: 0;
   height: 20px;
   width:100%;
+  transition: $duration;
 }
+
 .btn .glyphicon:hover {
   color: $color;
 }
