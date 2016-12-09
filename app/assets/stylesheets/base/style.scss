@@ -116,7 +116,7 @@
 \*------------------------------------*/
 
 .btn-group .btn-success {
-  background-color: darken($white,10%);
+  background-color: $green;
   border:solid 3px darken($green,6%);
   margin-bottom: 20px;
 }
