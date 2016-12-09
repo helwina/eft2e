@@ -133,6 +133,10 @@
   border:solid 2px darken($green,6%);
 }
 
+.btn-group {
+  height: 23px;
+}
+
 .btn-group .active {
   background-color: darken($green,6%);
 }
@@ -184,6 +188,7 @@
 .btn-cent {
   bottom: 15px;
   text-align: center;
+  height:20px;
 }
 
 .caroupad {
@@ -307,10 +312,11 @@ h2 .under {
            filter
 \*------------------------------------*/
 .filters {
-  margin:1%;
+  margin:1% auto;
   padding:0;
   list-style:none;
   text-align: center;
+  width: 906px;
 }
 
 .filters li {
@@ -330,6 +336,13 @@ h2 .under {
   color:#fff;
 }
 
+.menu-filters {
+  background: $green;
+}
+
+.azer {
+  height: 20px;
+}
 /*------------------------------------*\
            boite modal
 \*------------------------------------*/
@@ -483,6 +496,7 @@ footer .fb-link p {
 
 .societe ul {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .societe p {
