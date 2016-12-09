@@ -116,7 +116,7 @@
 \*------------------------------------*/
 
 .btn-group .btn-success {
-  background-color: $green;
+  background-color: darken($white,10%);
   border:solid 3px darken($green,6%);
   margin-bottom: 20px;
 }
@@ -452,7 +452,7 @@ footer .fb-link p {
 }
 
 .navigation-navbar li a {
-  color:$white;
+  color:$green;
 }
 
 .navigation-navbar li a:hover {
