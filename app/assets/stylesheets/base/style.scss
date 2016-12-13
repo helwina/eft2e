@@ -218,6 +218,12 @@
 
 .article-title {
   color: $green;
+  background-color: $blue-grey;
+}
+
+.article-title h1 {
+  font-size: 25px;
+  margin-top: 20px !important;
 }
 
 .carouvue .carousel-inner {
@@ -228,8 +234,8 @@
 }
 
 .carouvue .item img {
-  height:max(475px);
-  width:auto;
+  height:475px;
+  width:906px;
   margin:auto;
 }
 

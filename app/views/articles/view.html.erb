@@ -2,7 +2,7 @@
 <% @meta_description = @article.description %>
 <% @meta_keyword = 'CE, CCTP, DPGF, DQE, plans DAO, chauffage, ventilation, climatisation, rafraîchissement,
 solaire, thermique, désenfumage, régulation, GTC, BBC+, STD, Simulation Thermo-Dynamique, Infiltrométrie, infra-rouge, Certification RT2012, Chauffage, ventilation, sanitaire , assainissement, électricité' %>
-  <div class="article-title">
+  <div class="article-title content">
     <h1><strong><%= @article.titre%></strong></h1>
   </div>
   <!--boite modal-->
@@ -91,9 +91,9 @@ solaire, thermique, désenfumage, régulation, GTC, BBC+, STD, Simulation Thermo
   </div><!--/modal-->
   <!-- carousel1-->
   <div>
-    <div id="carou1" class="container container-carou soci">
+    <div id="carou1" class="content container container-carou soci">
       <div class="row">
-        <div class="col-sm-12">
+        <div>
           <div id="carousel" class="carousel slide carouvue">
             <div class="carousel-inner">
               <%if @article.image.present?%>
@@ -134,9 +134,9 @@ solaire, thermique, désenfumage, régulation, GTC, BBC+, STD, Simulation Thermo
 
 
     <!-- carousel2-->
-    <div id="carou2" class="container desactiver container-carou soci">
+    <div id="carou2" class="content container desactiver container-carou soci">
       <div class="row">
-        <div class="col-lg-12">
+        <div>
           <div id="carousel" class="carousel slide carouvue">
             <div class="carousel-inner">
               <%if @article.plant.present?%>
