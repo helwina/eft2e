@@ -341,6 +341,10 @@ h2 .under {
   text-align: center;
   width: 906px;
 }
+.menu-filters {
+  width:906px;
+  margin:auto;
+}
 
 .filters li {
   display: inline-block;
@@ -348,7 +352,7 @@ h2 .under {
 
 .filters li span {
   display: block;
-  padding:10px 23px;
+  padding:10px 18px;
   color:$white;
   cursor: pointer;
   font-size:14px;
@@ -359,8 +363,17 @@ h2 .under {
   color:#fff;
 }
 
-.menu-filters {
+.filters li {
   background: $blue-grey;
+  border-right: lighten($blue-grey, 5%) solid 4px;
+}
+
+.filters li:first-child {
+  border-left: none;
+}
+
+.filters li:last-child {
+  border-right: none;
 }
 
 .azer {
