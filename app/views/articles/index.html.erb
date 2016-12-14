@@ -2,6 +2,37 @@
 <% @meta_description = "EFT2E Ingénierie est un bureau d'études spécialisé dans la réalisation des études de conception et d'exécution de fluides techniques et thermiques du bâtiment" %>
 <% @meta_keyword = ' Etudes, Fluides, Thermiques, Energies, Environnement, bureau d études, énergies renouvelables, écoute, conseils, objectifs énergétiques, environnementaux, économiques'%>
 <div class="container content azaz">
+  <div class="societe content menu-filters">
+    <ul id="filters" class="filters">
+      <li>
+        <span class="filter active" data-filter="cat1 cat2 cat3 cat4 cat5 cat6 cat7 cat8 cat9">Tout</span>
+      </li>
+      <li>
+        <span class="filter" data-filter="cat1 cat2">Habitat</span>
+      </li>
+      <li>
+        <span class="filter" data-filter="cat3">Tertiaire</span>
+      </li>
+      <li>
+        <span class="filter" data-filter="cat4">Social</span>
+      </li>
+      <li>
+        <span class="filter" data-filter="cat5">Culturel</span>
+      </li>
+      <li>
+        <span class="filter" data-filter="cat6">Enseignement</span>
+      </li>
+      <li>
+        <span class="filter" data-filter="cat7">Sportif</span>
+      </li>
+      <li>
+        <span class="filter" data-filter="cat8">Industriel</span>
+      </li>
+      <li>
+        <span class="filter" data-filter="cat9">Santé</span>
+      </li>
+    </ul>
+  </div>
   <div class="row">
     <div class="col-sm-12 caroupad">
       <div id="carousel" class="carousel slide">
@@ -102,37 +133,7 @@
     </div>
   </div>
 </div>
-  <div class="societe content menu-filters">
-    <ul id="filters" class="filters">
-      <li>
-        <span class="filter active" data-filter="cat1 cat2 cat3 cat4 cat5 cat6 cat7 cat8 cat9">Tout</span>
-      </li>
-      <li>
-        <span class="filter" data-filter="cat1 cat2">Habitat</span>
-      </li>
-      <li>
-        <span class="filter" data-filter="cat3">Tertiaire</span>
-      </li>
-      <li>
-        <span class="filter" data-filter="cat4">Social</span>
-      </li>
-      <li>
-        <span class="filter" data-filter="cat5">Culturel</span>
-      </li>
-      <li>
-        <span class="filter" data-filter="cat6">Enseignement</span>
-      </li>
-      <li>
-        <span class="filter" data-filter="cat7">Sportif</span>
-      </li>
-      <li>
-        <span class="filter" data-filter="cat8">Industriel</span>
-      </li>
-      <li>
-        <span class="filter" data-filter="cat9">Santé</span>
-      </li>
-    </ul>
-  </div>
+
 <div class="container content container-fluid-index">
     <div id="articleliste" class="clear articlelist ">
       <% @articles.each do|article|%>
