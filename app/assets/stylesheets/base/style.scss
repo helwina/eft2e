@@ -246,6 +246,7 @@
 .center-btn, .article-title  {
   text-align: center;
 }
+
 .center-btn {
   position: relative;
   top: -205px;
@@ -359,7 +360,7 @@ h2 .under {
 }
 
 .menu-filters {
-  background: $green;
+  background: $blue-grey;
 }
 
 .azer {
@@ -427,7 +428,6 @@ footer .fb-link p {
   text-align: center!important;
   color: $color;
 }
-
 
 /*------------------------------------*\
            navbar
@@ -556,5 +556,3 @@ p {
 .fb-link .fb a:hover {
   color: $blue-grey;
 }
-
-
