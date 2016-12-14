@@ -367,6 +367,9 @@ h2 .under {
   background: $blue-grey;
   border-right: lighten($blue-grey, 5%) solid 4px;
 }
+filter li:first-child{
+  border-left: lighten($blue-grey, 5%) solid 4px;
+}
 
 .azer {
   height: 20px;
