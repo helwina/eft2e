@@ -349,7 +349,7 @@ h2 .under {
 .filters li span {
   display: block;
   padding:10px 14px;
-  color:$color;
+  color:$white;
   cursor: pointer;
   font-size:14px;
 }
@@ -360,7 +360,7 @@ h2 .under {
 }
 
 .menu-filters {
-  background: lighten($blue-grey,40%);
+  background: $blue-grey;
 }
 
 .azer {
