@@ -439,9 +439,9 @@ footer .fb-link p {
   color: $color;
 }
 
-footer .twitter {
-  width:16px;
-  height: 16px;
+footer .twitter, footer .facebook{
+  width:25px;
+  height: 25px;
 }
 /*------------------------------------*\
            navbar
