@@ -95,7 +95,7 @@ solaire, thermique, désenfumage, régulation, GTC, BBC+, STD, Simulation Thermo
       <div class="row">
         <div>
           <div id="carousel" class="carousel slide carouvue">
-            <div class="carousel-inner">
+            <div class="carousel-inner-vue">
               <%if @article.image.present?%>
                   <div class="item active">
                     <%= image_tag(@article.image.url(:original)) %>
@@ -138,7 +138,7 @@ solaire, thermique, désenfumage, régulation, GTC, BBC+, STD, Simulation Thermo
       <div class="row">
         <div>
           <div id="carousel" class="carousel slide carouvue">
-            <div class="carousel-inner">
+            <div class="carousel-inner-vue">
               <%if @article.plant.present?%>
                   <div class="item active">
                     <%= image_tag(@article.plant.url(:original)) %>

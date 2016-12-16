@@ -183,6 +183,15 @@
   width: 100%;
 }
 
+.carousel-inner-vue {
+  height: 100%;
+  width:100%;
+}
+
+.carousel-inner-vue img {
+  height: 100%;
+  width: 100%;
+}
 .item .carousel-caption h2{
   margin: 0;
   padding: 0;
@@ -249,7 +258,7 @@
 
 .center-btn {
   position: relative;
-  top: -205px;
+  top: -215px;
 }
 
 /*------------------------------------*\
@@ -472,6 +481,11 @@ footer .twitter, footer .facebook{
   display: inline-block;
   height:50px;
   transition: $durationheader;
+}
+
+nav {
+  overflow: auto;
+  height:inherit;
 }
 
 .header-navbar ul li a:hover {
