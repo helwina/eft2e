@@ -2,13 +2,17 @@
   <div class="fb-link">
     <p class="fb">
       <strong>
-        <%= link_to('facebook' ,'https://www.facebook.com/eft2e.ingenierie', target: '_blank' )%>
+        <%= link_to 'https://www.facebook.com/eft2e.ingenierie', target: '_blank' do %>
+            <%= image_tag 'F_icon.svg.png'%>
+        <% end %>
       </strong>
-        et
+        /
       <strong>
-        <%= link_to('twitter' ,'https://twitter.com/EFT2E_Ing', target: '_blank' )%>
+        <%= link_to 'https://twitter.com/EFT2E_Ing', target: '_blank' do %>
+            <%= image_tag 'twitter.png', class: 'twitter'%>
+        <%end%>
       </strong>
-        ou sur notre
+        /
       <strong>
         <%= link_to('page de contact', contact_path) %>
       </strong>
