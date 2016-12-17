@@ -69,7 +69,7 @@
   bottom: auto;
   margin: 0;
   padding: 0;
-  color: $white!important;
+  color: #000;
   font-size: 14px;
   line-height: 20px;
   opacity: 0;
@@ -99,6 +99,7 @@
 
 .carte-description p {
   word-break:break-all;
+  color: #000;
 }
 
 @keyframes titleBlur {
