@@ -91,11 +91,11 @@ solaire, thermique, désenfumage, régulation, GTC, BBC+, STD, Simulation Thermo
   </div><!--/modal-->
   <!-- carousel1-->
   <div>
-    <div id="carou1" class="content container container-carou soci">
+    <div id="carou1" class="content container soci">
       <div class="row">
         <div>
           <div id="carousel" class="carousel slide carouvue">
-            <div class="carrousel-inner">
+            <div class="carousel-inner">
               <%if @article.image.present?%>
                   <div class="item active">
                     <%= image_tag(@article.image.url(:original)) %>
@@ -134,11 +134,11 @@ solaire, thermique, désenfumage, régulation, GTC, BBC+, STD, Simulation Thermo
 
 
     <!-- carousel2-->
-    <div id="carou2" class="content container desactiver container-carou soci">
+    <div id="carou2" class="content container desactiver soci">
       <div class="row">
         <div>
           <div id="carousel" class="carousel slide carouvue">
-            <div class="carrousel-inner">
+            <div class="carousel-inner">
               <%if @article.plant.present?%>
                   <div class="item active">
                     <%= image_tag(@article.plant.url(:original)) %>
