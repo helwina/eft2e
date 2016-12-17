@@ -90,11 +90,14 @@
   text-align: center;
   color: $white!important;
   font-weight: bold;
-  font-size:14px;
 
   .carte:hover &{
     animation: titleBlur $duration;
   }
+}
+
+.carte-title h2 {
+  font-size: 14px!important;
 }
 
 .carte-description p {
