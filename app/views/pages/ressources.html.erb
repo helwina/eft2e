@@ -97,8 +97,9 @@
   <% @ressources.each do |ressource|%>
       <% if ressource.titre.present?%>
           <h2><%= ressource.titre%></h2>
+          <hr>
       <%end%>
-      <hr>
+
       <% if ressource.description.present?%>
           <p><%= ressource.description%></p>
       <%end%>
