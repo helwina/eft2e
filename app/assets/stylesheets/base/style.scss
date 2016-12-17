@@ -309,6 +309,10 @@
   text-decoration: none!important;
 }
 
+footer .fb-link .und {
+  text-decoration: underline!important;
+}
+
 h2 .under {
   padding-bottom: 20px;
 }
@@ -448,14 +452,11 @@ footer .fb-link p, footer .fb-link a {
   color: $white!important;
 }
 
-footer .fb-link a {
-  text-decoration: underline!important;
-}
 
 footer .twitter, footer .facebook{
   width:25px;
   height: 25px;
-  text-decoration: none!important;
+
 }
 /*------------------------------------*\
            navbar
