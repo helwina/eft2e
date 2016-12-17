@@ -21,7 +21,7 @@
   margin: auto;
   overflow: hidden;
   width: 400px;
-  background-color: lighten($blue-grey,40%);
+  background-color: lighten($green,10%);
   font-size:16px;
   box-shadow: 0 0 20px rgba(150,169,46,0.5);
   transition: box-shadow $duration;
@@ -90,6 +90,7 @@
   text-align: center;
   color: #000;
   font-weight: bold;
+  font-size:16px;
 
   .carte:hover &{
     animation: titleBlur $duration;
