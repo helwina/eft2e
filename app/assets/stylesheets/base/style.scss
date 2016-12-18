@@ -569,6 +569,10 @@ nav {
   text-align: justify;
 }
 
+.societe article:last-child, .societe ul:last-child {
+  padding-bottom: 20px;
+}
+
 .soci {
   height: 750px;
 }
