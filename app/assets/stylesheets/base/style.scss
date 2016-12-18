@@ -452,6 +452,9 @@ footer .fb-link p, footer .fb-link a {
   color: $white!important;
 }
 
+footer .fb-link a:hover {
+  color: $color!important;
+}
 
 footer .twitter, footer .facebook{
   width:25px;
@@ -487,6 +490,7 @@ footer .twitter, footer .facebook{
   display: inline-block;
   height:50px;
   transition: $durationheader;
+  text-shadow: 2px 2px 4px $color;
 }
 
 nav {
@@ -497,6 +501,7 @@ nav {
 .header-navbar ul li a:hover {
   background-color: darken($green, 5%);
   color: $color;
+  text-shadow: 2px 2px 4px $white;
 }
 
 .header-navbar ul li .active {
