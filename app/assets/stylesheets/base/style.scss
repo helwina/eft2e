@@ -466,16 +466,23 @@ h2 .under {
 footer .fb-link p, footer .fb-link a {
   text-align: center!important;
   color: $white!important;
+  text-shadow: 2px 2px 4px $color;
 }
 
 footer .fb-link a:hover {
   color: $color!important;
+  text-shadow: 2px 2px 4px $white;
 }
 
 footer .twitter, footer .facebook{
   width:25px;
   height: 25px;
   margin-right: 10px;
+  box-shadow: 2px 2px 4px $color;
+}
+
+footer .twitter:hover, footer .facebook:hover{
+  box-shadow: 4px 4px 4px $color;
 }
 /*------------------------------------*\
            navbar
@@ -612,10 +619,3 @@ p {
   margin-top: 10px;
 }
 
-.fb-link .fb a {
-  color: $green;
-}
-
-.fb-link .fb a:hover {
-  color: $blue-grey;
-}
