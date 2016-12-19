@@ -478,11 +478,12 @@ footer .twitter, footer .facebook{
   width:25px;
   height: 25px;
   margin-right: 10px;
-  box-shadow: 2px 2px 4px $color;
+  box-shadow: 4px 4px 4px $color;
+
 }
 
 footer .twitter:hover, footer .facebook:hover{
-  box-shadow: 4px 4px 4px $color;
+  box-shadow: 2px 2px 4px $color;
 }
 /*------------------------------------*\
            navbar
