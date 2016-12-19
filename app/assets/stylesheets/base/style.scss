@@ -156,12 +156,13 @@
 }
 
 .btn-group {
-  height: 23px;
+  height: 25px;
 }
 
 .btn-group .active {
   background-color: darken($green,3%);
   border:darken($green,5%);
+  margin-right: -2px;
 }
 
 .btn .glyphicon {
@@ -208,9 +209,10 @@
 }
 
 .btn-cent {
-  bottom: 15px;
+  bottom: 14px;
   text-align: center;
   height:20px;
+  margin-left: -1px;
 }
 
 .caroupad {
