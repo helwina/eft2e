@@ -341,6 +341,11 @@ h2 .under {
   color:$blue-grey;
 }
 
+.modal-content .modal-header .modal-title {
+  text-align: center !important;
+  font-size: 20px !important;
+}
+
 .modal-content .modal-body p {
   color: $color!important;
   text-align:left!important;
