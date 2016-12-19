@@ -233,14 +233,14 @@
 }
 
 .carouvue .carousel-inner {
-  height: min(75%);
+  height: 100%;
   position: relative;
   top: 10px;
   margin:auto;
 }
 
 .carouvue .item img {
-  height:475px;
+  height:679px !important;
   width:906px;
   margin:auto;
 }
@@ -255,7 +255,7 @@
 
 .center-btn {
   position: relative;
-  top: -215px;
+  top: -63px;
 }
 
 /*------------------------------------*\
@@ -545,7 +545,7 @@ nav {
 
 .navigation-navbar {
   position: relative;
-  top: -190px;
+  top: -50px;
 }
 .navigation-navbar li {
   text-transform: uppercase;
