@@ -179,10 +179,12 @@
 
 .btn .glyphicon:hover {
   color: $color;
+  text-shadow: 2PX 2PX 2PX $white;
 }
 
 .glyphicon {
-  top: -6px !important;;
+  top: -6px !important;
+  text-shadow: 2px 2px 2px $color;
 }
 
 .carousel-inner {
