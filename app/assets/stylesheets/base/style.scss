@@ -610,10 +610,6 @@ nav {
   height: 750px;
 }
 
-.socicentre {
-  padding-top: 55px;
-}
-
 footer {
   background-color: $green!important;
   position: relative;
@@ -630,10 +626,11 @@ p {
 }
 
 .imgaccueil {
-  width:425px;
+  width:405px;
   height:239px;
 }
 
 .imgacc {
   display: inline-block;
+  padding: 30px;
 }
