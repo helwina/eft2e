@@ -375,6 +375,7 @@ h2 .under {
 .menu-filters {
   width:906px;
   margin:auto;
+  z-index: 9999;
 }
 
 .filters li {
@@ -595,7 +596,7 @@ nav {
   text-align: justify;
 }
 
-.societe article:last-child, .societe ul:last-child {
+.societe article:last-child, .societe .mire:last-child {
   padding-bottom: 20px;
 }
 
