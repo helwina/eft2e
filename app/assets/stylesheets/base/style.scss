@@ -594,6 +594,18 @@ nav {
   text-align: center;
 }
 
+.aa {
+  background-color: $green;
+  border-radius: 20px;
+  padding: 10px;
+  color: $white!important;
+}
+
+.aa:hover {
+  background-color: darken($green,5%);
+  color: $color !important;
+}
+
 .societe ul {
   margin-bottom: 0;
   margin-top: 0;
