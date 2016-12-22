@@ -387,7 +387,7 @@ h2 .under {
 
 .filters li span {
   display: block;
-  padding:10px 22px;
+  padding:10px 17px;
   color:$white;
   cursor: pointer;
   font-size:14px;
@@ -449,8 +449,12 @@ h2 .under {
   word-wrap: break-word;
 }
 
-.article-object-col1 p, .modal-body h3, .modal-header h3 {
-  color: $green;
+.modal-body .article-object-col1 p {
+  font-weight: bold;
+}
+
+.modal-body .article-object-col1 p, .modal-body h3, .modal-header h3 {
+  color: $green!important;
 }
 
 .article-object-col2 strong, .contacts strong {
