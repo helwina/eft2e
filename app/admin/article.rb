@@ -18,7 +18,8 @@ ActiveAdmin.register Article do
       f.input :plant4, :as => :file, :hint => f.template.image_tag(f.object.plant4.url(:original))
       f.input :plant5, :as => :file, :hint => f.template.image_tag(f.object.plant5.url(:original))
       f.input :category, label: 'category 1 = Habitat, 2 = Habitat, 3 = Tertiaire, 4 = Social, 5
- = Culturel, 6 = Enseignement, 7 = Sportif, 8 = Industriel, 9 = Santé uniquement le numero pour le premier puis un
+ = Culturel, 6 = Enseignement, 7 = Sportif, 8 = Industriel, 9 = Santé 10 = Concours uniquement le numero pour le
+premier puis un
 espace et cat suivie du numereau sans espace pour les autre cat3 pour la categories 3 etc...'
       f.input :objet1col1, label: 'maitre d ouvrage'
       f.input :objet1col2, label: 'nom du maitre d ouvrage'
