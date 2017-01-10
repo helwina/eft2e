@@ -374,6 +374,15 @@ h2 .under {
   overflow: auto;
 }
 
+.filter {
+  transition: $duration;
+}
+
+.filter:hover {
+  background-color: darken($green, 5%)!important;
+  transition: $duration;
+}
+
 .menu-filters {
   width:906px;
   margin:auto;
