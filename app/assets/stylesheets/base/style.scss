@@ -599,11 +599,14 @@ nav {
   border-radius: 20px;
   padding: 10px;
   color: $white!important;
+  text-align: right;
+  transition: $duration;
 }
 
 .aa:hover {
   background-color: darken($green,5%);
   color: $color !important;
+  transition: $duration;
 }
 
 .societe ul {
