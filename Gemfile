@@ -16,7 +16,7 @@ gem 'therubyracer', platforms: :ruby
 # boostrap
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # panneau d administrations
-
+gem 'passenger', '~> 5.1', '>= 5.1.1'
 gem 'activeadmin', '1.0.0.pre1'
 gem 'devise', '~> 3.2'
 gem 'cancan'
