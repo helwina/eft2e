@@ -7,21 +7,13 @@
 
 body {
   padding:0;
-  width:100%;
-  margin:auto;
+  
   font-size:16px;
-  background-color: $blue-grey
+  line-height: 1.4;
 }
 
 h1 {
   text-transform: uppercase;
-  margin-top: 10px!important;
-}
-
-.mire li {
-  font-size:15px;
-  font-family:Sans-Serif;
-  color: $color;
 }
 
 h2 {
@@ -30,14 +22,20 @@ h2 {
 
 footer {
   padding:5px;
+  width:100%;
 }
 
 li{
   list-style-type:none;
 }
-
-.con-flu, .content {
+.container-fluid, .content {
   margin: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  background-color: $blue-grey;
+  min-height: 900px;
 }
 
 .container-carou {
@@ -46,11 +44,10 @@ li{
 
 .container-fluid-index {
   background-color: $white;
-  padding: 0 !important;
 }
 
 .content {
-  width: 906px;
+  width: 80%;
   background-color: $white;
 }
 
@@ -58,30 +55,23 @@ li{
   background-color: $white;
 }
 
-.content-vue {
-  background-color: $blue-grey !important;
-}
-
 ul li a {
-  color: $white;
+  color: $color;
 }
 
-ul {
-  margin-left: -47px;
-}
 
 hr {
-  background: url(asset-path("hr-green.png"))no-repeat center/50%;
+  background: url(asset-path("hr-green.png"))no-repeat left/70%;
   height: 15px;
   border: none;
-  margin: auto;
+  margin: 0;
+
 }
 
 .puces {
   height: 17px;
   width: 17px;
   margin-right:7px;
-  margin-left: 65px;
 }
 
 a, a:hover {
@@ -89,42 +79,15 @@ a, a:hover {
 }
 
 p {
-  color:$color;
+  color:$blue-grey;
+  word-wrap: break-word;
 }
 
-.gris {
-  color: $blue-grey;
+@media screen and (max-width: 970px) {
+  .content {
+    width: 100%;
+  }
 }
-
-.vert {
-  color: $green;
-}
-
-.big{
-  font-weight: bolder;
-  font-family:Sans-Serif;
-}
-
-.texte, .tate {
-  font-size:26px;
-  color:$color;
-}
-
-
-p {
-  font-family:Sans-Serif;
-  font-size: 15px;
-}
-
-.droite {
-  text-align: center;
-  font-size:18px;
-  color: $green;
-  font-weight: bold;
-  padding: 20px 10px 0 10px;
-  margin:auto;
-}
-
 /*------------------------------------*\
                 clear
 \*------------------------------------*/
